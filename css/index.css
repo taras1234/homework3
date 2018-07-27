@@ -1,0 +1,22 @@
+.navigation li {
+    display: inline;
+    font-size: 2rem;
+    border: 2px solid red;
+    border-color: black;
+    margin: 5px;
+    padding: 2px;
+    float: right;
+}
+#world{
+    padding-top: 4rem;
+}
+.navigation li:hover {
+    background-color: white;
+    color: grey;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+    background-color: lightblue;
+}
