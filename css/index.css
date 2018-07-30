@@ -1,22 +1,99 @@
-.navigation li {
-    display: inline;
-    font-size: 2rem;
-    border: 2px solid red;
-    border-color: black;
-    margin: 5px;
-    padding: 2px;
-    float: right;
-}
-#world{
-    padding-top: 4rem;
-}
-.navigation li:hover {
-    background-color: white;
-    color: grey;
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+:root {
+    font-family: 'Lato', sans-serif;
 }
 
 body {
     max-width: 800px;
     margin: auto;
     background-color: lightblue;
+    padding: 0 5px;
 }
+
+.image {
+    max-width: 90%;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem
+}
+
+header nav ul li a:hover {
+    color: white;
+    text-decoration: underline green;
+}
+
+header nav ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+header div h1 {
+    font-family: 'Merienda', cursive;
+    font-size: 2rem;
+}
+
+@media(max-width: 399px) {
+    .banner {
+        display: none;
+    }
+}
+
+@media (min-width: 400px) {
+    header nav {
+        display: flex;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        flex: 1;
+        align-items: center;
+    }
+    header nav ul li {
+        margin-left: 2%;
+    }
+
+    .banner {
+        height: 400px;
+        background-image: url(../img/section.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .banner div {
+        font-size: 2rem;
+    }
+
+    .backgroun-text {
+        display: flex;
+    }
+
+    .background-text1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .background-text2 {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .background-text5 {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.text-img-without-top {
+    margin-top: 2px;
+    color: green;
+    font-size: smaller;}
